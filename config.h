@@ -5,11 +5,21 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+//static char *font = "TerminessTTF Nerd Font:style=Regular:pixelsize=15:antialias=true:autohint=true";
+static char *font = "TerminessTTF Nerd Font Mono:style=Regular:pixelsize=14:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
-/*	"Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true", */
-/*	"Hack Nerd Font Mono:pixelsize=11:antialias=true:autohint=true", */
+/*   "TerminessTTF Nerd Font:style=Regular:pixelsize=18:antialias=true:autohint=true:width=13",
+/*   "PKMN RBYGSC:style=Regular:size=9:antialias=false:autohint=true",
+/*   "Apple ][:style=Regular:size=9:antialias=false:autohint=true",
+/*   "scientifica:style=Regular:pixelsize=18:antialias=false",
+/*   "Nintendo DS BIOS:style=Regular:pixelsize=21:antialias=false",
+/*   "Retro Gaming:style=Regular:pixelsize=12;antialias=false",
+/*   "Pokemon Classic:style=Regular:pixelsize=10;antialias=false",
+/*   "Minecraftia:style=Regular:pixelsize=13:antialias=true:autohint=true:width=13",
+/*   "Liberation Mono:pixelsize=12:antialias=true:autohint=true",
+/*   "Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true", */
+/*	 "Hack Nerd Font Mono:pixelsize=11:antialias=true:autohint=true", */
 };
 
 static int borderpx = 2;
@@ -66,7 +76,7 @@ static double maxlatency = 33;
  * blinking timeout (set to 0 to disable blinking) for the terminal blinking
  * attribute.
  */
-static unsigned int blinktimeout = 800;
+static unsigned int blinktimeout = 000;
 
 /*
  * thickness of underline and bar cursors
