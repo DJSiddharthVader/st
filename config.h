@@ -6,10 +6,11 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 //static char *font = "TerminessTTF Nerd Font:style=Regular:pixelsize=15:antialias=true:autohint=true";
-static char *font = "TerminessTTF Nerd Font Mono:style=Regular:pixelsize=14:antialias=true:autohint=true";
+static char *font = "Terminus:style=Regular:size=11:antialias=true:autohint=true";
+// static char *font = "TerminessTTF Nerd Font Mono:style=Regular:size=13:antialias=true:witdth=15:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
-/*   "TerminessTTF Nerd Font:style=Regular:pixelsize=18:antialias=true:autohint=true:width=13",
+     "TerminessTTF Nerd Font:style=Regular:pixelsize=18:antialias=true:autohint=true:width=13",
 /*   "PKMN RBYGSC:style=Regular:size=9:antialias=false:autohint=true",
 /*   "Apple ][:style=Regular:size=9:antialias=false:autohint=true",
 /*   "scientifica:style=Regular:pixelsize=18:antialias=false",
