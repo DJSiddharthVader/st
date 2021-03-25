@@ -5,22 +5,28 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-//static char *font = "TerminessTTF Nerd Font:style=Regular:pixelsize=15:antialias=true:autohint=true";
-static char *font = "Terminus:style=Regular:size=11:antialias=true:autohint=true";
-// static char *font = "TerminessTTF Nerd Font Mono:style=Regular:size=13:antialias=true:witdth=15:autohint=true";
+// static char *font = "Terminus:style=Regular:size=11:antialias=false:autohint=true";
+ static char *font = "Pixel Operator Mono:style=Regular:size=12:antialias=false:autohint=true";
+
 /* Spare fonts */
 static char *font2[] = {
-     "TerminessTTF Nerd Font:style=Regular:pixelsize=18:antialias=true:autohint=true:width=13",
-/*   "PKMN RBYGSC:style=Regular:size=9:antialias=false:autohint=true",
-/*   "Apple ][:style=Regular:size=9:antialias=false:autohint=true",
-/*   "scientifica:style=Regular:pixelsize=18:antialias=false",
-/*   "Nintendo DS BIOS:style=Regular:pixelsize=21:antialias=false",
-/*   "Retro Gaming:style=Regular:pixelsize=12;antialias=false",
-/*   "Pokemon Classic:style=Regular:pixelsize=10;antialias=false",
-/*   "Minecraftia:style=Regular:pixelsize=13:antialias=true:autohint=true:width=13",
-/*   "Liberation Mono:pixelsize=12:antialias=true:autohint=true",
-/*   "Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true", */
-/*	 "Hack Nerd Font Mono:pixelsize=11:antialias=true:autohint=true", */
+     "FontAwesome:style=Regular:pixelsize=19:antialias=true:autohint=true",
+     "TerminessTTF Nerd Font:style=Regular:pixelsize=17:antialias=true:autohint=true",
+/*   "Po$h Pixels:style=Regular:size=15:antialias=true:autohint=true;1",
+     "PixelSleigh:style=Regular:pixelsize=8:antialias=true",
+     "Silom:style=Regular:pixelsize=15:antialias=true",
+     "Pixeltype:style=Refular:pixelsize=18:antialias=true",
+     "Rress Start 2P:style=Regular:pixelsize=12:antialias=true",
+     "PKMN RBYGSC:style=Regular:size=9:antialias=false:autohint=true",
+     "Apple ][:style=Regular:size=9:antialias=false:autohint=true",
+     "scientifica:style=Regular:pixelsize=18:antialias=false",
+     "Nintendo DS BIOS:style=Regular:pixelsize=21:antialias=false",
+     "Retro Gaming:style=Regular:pixelsize=12;antialias=false",
+     "Pokemon Classic:style=Regular:pixelsize=10;antialias=false",
+     "Minecraftia:style=Regular:pixelsize=13:antialias=true:autohint=true:width=13",
+     "Liberation Mono:pixelsize=12:antialias=true:autohint=true",
+     "Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true",
+*/
 };
 
 static int borderpx = 2;
@@ -195,7 +201,7 @@ static uint forcemousemod = ShiftMask;
  */
 static MouseShortcut mshortcuts[] = {
 	/* mask                 button   function        argument       release */
-	{ XK_ANY_MOD,           Button2, selpaste,       {.i = 0},      1 },
+	{ XK_ANY_MOD,           Button2, clippaste,      {.i = 0},      1 },
 	{ ShiftMask,            Button4, ttysend,        {.s = "\033[5;2~"} },
 	{ XK_ANY_MOD,           Button4, ttysend,        {.s = "\031"} },
 	{ ShiftMask,            Button5, ttysend,        {.s = "\033[6;2~"} },
@@ -217,8 +223,8 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Home,        zoomreset,      {.f =  0} },
 	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} },
 	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
-	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
-	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
+	{ TERMMOD,              XK_Y,           clippaste,      {.i =  0} },
+	{ ShiftMask,            XK_Insert,      clippaste,      {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
 	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
 	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
