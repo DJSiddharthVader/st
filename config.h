@@ -5,28 +5,33 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-// static char *font = "Terminus:style=Regular:size=11:antialias=false:autohint=true";
- static char *font = "Pixel Operator Mono:style=Regular:size=12:antialias=false:autohint=true";
+/*
+static char *font = "Pokemon Classic:style=Regular:size=7:antialias=true:autohint=true";
+static char *font = "Apple ][:style=Regular:size=9:antialias=false:autohint=true";
+static char *font = "Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true";
+static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+static char *font = "Minecraftia:style=Regular:pixelsize=13:antialias=true:autohint=true:width=13";
+static char *font = "Nintendo DS BIOS:style=Regular:pixelsize=21:antialias=false";
+static char *font = "PKMN RBYGSC:style=Regular:size=9:antialias=false:autohint=true";
+static char *font = "Pixel Operator Mono:style=Regular:size=12:antialias=false:autohint=true";
+static char *font = "Pixel Operator Mono:style=Regular:size=12:antialias=false:autohint=true";
+static char *font = "PixelSleigh:style=Regular:pixelsize=8:antialias=true";
+static char *font = "Pixeltype:style=Refular:pixelsize=18:antialias=true";
+static char *font = "Po$h Pixels:style=Regular:size=15:antialias=true:autohint=true;1";
+static char *font = "Press Start 2P:style=Regular:pixelsize=8:antialias=true";
+static char *font = "PixelPlay:style=Regular:size=11:antialias=false:autohint=true";
+static char *font = "Silom:style=Regular:pixelsize=15:antialias=true";
+static char *font = "scientifica:style=Regular:pixelsize=22:antialias=false";
+static char *font = "Retro Gaming:style=Regular:pixelsize=11;antialias=true"; // 17;4, 21;0
+static char *font = "Terminus:style=Regular:size=11:antialias=false:autohint=true"; // 17;1 21
+*/
+
+static char *font = "GohuFont:style=Regular:size=12:antialias=false:autohint=true;1";
 
 /* Spare fonts */
 static char *font2[] = {
-     "FontAwesome:style=Regular:pixelsize=19:antialias=true:autohint=true",
-     "TerminessTTF Nerd Font:style=Regular:pixelsize=17:antialias=true:autohint=true",
-/*   "Po$h Pixels:style=Regular:size=15:antialias=true:autohint=true;1",
-     "PixelSleigh:style=Regular:pixelsize=8:antialias=true",
-     "Silom:style=Regular:pixelsize=15:antialias=true",
-     "Pixeltype:style=Refular:pixelsize=18:antialias=true",
-     "Rress Start 2P:style=Regular:pixelsize=12:antialias=true",
-     "PKMN RBYGSC:style=Regular:size=9:antialias=false:autohint=true",
-     "Apple ][:style=Regular:size=9:antialias=false:autohint=true",
-     "scientifica:style=Regular:pixelsize=18:antialias=false",
-     "Nintendo DS BIOS:style=Regular:pixelsize=21:antialias=false",
-     "Retro Gaming:style=Regular:pixelsize=12;antialias=false",
-     "Pokemon Classic:style=Regular:pixelsize=10;antialias=false",
-     "Minecraftia:style=Regular:pixelsize=13:antialias=true:autohint=true:width=13",
-     "Liberation Mono:pixelsize=12:antialias=true:autohint=true",
-     "Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true",
-*/
+     "TerminessTTF Nerd Font:style=Regular:pixelsize=15:antialias=true",
+     "FontAwesome:style=Regular:pixelsize=18:antialias=false:autohint=true",
 };
 
 static int borderpx = 2;
